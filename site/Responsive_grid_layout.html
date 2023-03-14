@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Learning Responsive Grid Layout</title>
+	<h1>Learning Responsive Grid Layout!!!</h1>
+	<style>
+		*{box-sizing: border-box;}
+		.row{width:100%;}
+		h1 { color:gold; text-align: center; font-family: 'Brush Script MT', cursive;}
+		p {height: 100px; width: 90%; border: 1px solid black; margin-right:auto; margin-left:auto; background:lightblue;} 
+		@media(min-width:1200px){
+			.lg_col1,.lg_col2,.lg_col3,.lg_col4,.lg_col5,.lg_col6,.lg_col7,.lg_col8,.lg_col9,.lg_col10,.lg_col11,.lg_col12{
+				float:left; border:1px solid green;
+			}
+		.lg_col1{width: 8.33%;}
+		.lg_col2{width: 16.66%;}
+		.lg_col3{width: 25%;}
+		.lg_col4{width: 33.33%;}
+		.lg_col5{width: 41.66%;}
+		.lg_col6{width: 50%;}
+		.lg_col17{width: 58.33%;}
+		.lg_col8{width: 66.66%;}
+		.lg_col9{width: 75%;}
+		.lg_col10{width: 83.33%;}
+		.lg_col11{width: 91.66%;}
+		.lg_col12{width: 100%;}
+				}
+		@media(min-width: 950px) and (max-width: 1199px){
+			.md_col1,.md_col2,.md_col3,.md_col4,.md_col5,.md_col6,.md_col7,.md_col8,.md_col9,.md_col10,.md_col11,.md_col12{
+				float:left; border:1px solid green;
+			}
+		.md_col1{width: 8.33%;}
+		.md_col2{width: 16.66%;}
+		.md_col3{width: 25%;}
+		.md_col4{width: 33.33%;}
+		.md_col5{width: 41.66%;}
+		.md_col6{width: 50%;}
+		.md_col17{width: 58.33%;}
+		.md_col8{width: 66.66%;}
+		.md_col9{width: 75%;}
+		.md_col10{width: 83.33%;}
+		.md_col11{width: 91.66%;}
+		.md_col12{width: 100%;}
+	}
+				
+	</style>
+	
+</head>
+<body>
+<div class="row">
+	<div class="lg_col3 md_col6"><p>P1</p></div>
+	<div class="lg_col3 md_col6"><p>P2</p></div>
+	<div class="lg_col3 md_col6"><p>P3</p></div>
+	<div class="lg_col3 md_col6"><p>P4</p></div>
+	<div class="lg_col3 md_col6"><p>P5</p></div>
+	<div class="lg_col3 md_col6"><p>P6</p></div>
+	<div class="lg_col3 md_col6"><p>P7</p></div>
+	<div class="lg_col3 md_col6"><p>P8</p></div>
+	
+</div>
+</body>
+</html>

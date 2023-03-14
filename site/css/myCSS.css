@@ -1,0 +1,105 @@
+body{font-size: 16px; font-family: 'Oxygen', sans-serif; color:white; background-color: #61122f;}
+/** HEADER **/
+#header-nav{background-color: #f6b319;border: 0;border-radius: 0;}
+#logo-img{background: url(../images/restaurant-logo_large.png) no-repeat; width:150px;height:150px; margin:10px 15px 10px 0; }
+h1{text-transform: uppercase; font-family: Georgia,serif; font-size:1.5em; color:#557c3e;
+	font-weight:bold; text-shadow:1px 1px 1px;}
+.navbar-brand a{text-decoration: none;}
+
+#nav-list a {color: #951C49; text-align: center; font-size: 1.5em;}
+#nav-list a:hover, #nav-list a:active{background: #E7E7E7;}
+#header-nav button.navbar-toggler{/*clear: both;*/ border: 1px solid #61122f;}
+#phone{text-align: right;}
+#deliver{text-align: center; color: #557c3e;}
+/* END HEADER */
+/* HOME PAGE */
+.container .jumbotron{box-shadow: 0 0 50px #3F0C1F; border: 2px solid #3F0C1F; margin: 15px auto 15px;}
+
+
+#menu-tiles, #specials-tile, #map-tile {
+	height: 250px; width: 100%; margin-bottom: 15px; position:relative; border: 2px solid #3F0C1F; overflow: hidden;
+}
+#menu-tiles:hover, #specials-tile:hover, #map-tile:hover {box-shadow: 0 1px 5px 1px #cccccc}
+#menu-tiles{background: url(../images/menu-tile.jpg) no-repeat; background-position: center;}
+#specials-tile{background: url(../images/specials-tile.jpg) no-repeat; background-position: center;}
+
+#menu-tiles span, #specials-tile span, #map-tile span {
+	position: absolute; bottom: 0; right: 0; text-transform: uppercase; width: 100%; text-align: center; background: black;
+	opacity: 0.8; color: white; font-size: 1.6em;
+}
+/* END HOME PAGE */
+/* FOOTER */
+.panel-footer{background-color: #363636; border: 0; margin-top: 10px; padding-bottom: 15px;}
+#hours span, #address span{ font-size:1.3em;}
+#address p{color: #557c3e; font-size: 0.8em;}
+.text-center{margin-top: 15px;  margin-bottom: 35px;}
+#testimonials{font-style: italic;}
+#testimonials p:nth-child(2){margin-top: 25px;}
+/* END FOOTER */
+/*Menu Categories Page*/
+#menu-categories-title div{margin-top: 0;}
+.category-tile{position: relative; width: 200px; border: 2px solid #3F0C1F; margin: 0 auto 15px; overflow: hidden;}
+.category-tile:hover {box-shadow: 0 1px 5px 1px #cccccc}
+.category-tile span{position: absolute; bottom: 0; right: 0; text-transform: uppercase; width: 100%; text-align: center; 
+	background: black; opacity: 0.8; color: white; font-size: 1.2em;}
+/* END MENU CATEGORIES PAGE */
+
+/* SINGLE CATEGORY PAGE */
+.menu-item-tile{ margin-bottom:25px;}
+.menu-item-photo {position: relative; border: 2px solid #3F0C1F; max-width: 250px;}
+.menu-item-photo span{position: absolute; bottom: 0;right: 0; width: 30%; background-color:#557c3e; text-align:center; }
+.menu-item-price{text-align: right;}
+.menu-item-price span{font-size: 0.6em;}
+.menu-item-title{font-size: 1.5em;}
+.menu-item-details{font-style: italic;}
+
+/*Media queries*/
+/*Extra LARGE*/
+@media (min-width:1200px) {
+	.container .jumbotron{ background:url(../images/jumbotron_1200.jpg) no-repeat; height: 675px;}
+}
+/*Large*/
+@media(min-width:992px) and (max-width:1199px) {
+	.container .jumbotron{ background:url(../images/jumbotron_992.jpg) no-repeat; height: 558px;}
+}
+/*Medium*/
+@media(min-width:768px) and (max-width:991px) {
+	.container .jumbotron{ background:url(../images/jumbotron_768.jpg) no-repeat; height: 432px;}
+}
+
+
+/*Small*/
+@media  (max-width:767px) {
+	#call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+  }
+  #xs-deliver {
+    margin-top: -15px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  .container .jumbotron{margin-top: 30px; padding: 0;}
+	#menu-tiles, #specials-tile{ width:360px; margin:0 auto 15px; }
+	
+    .panel-footer section hr{width: 50%; margin: auto;}
+/*single category*/
+	.menu-item-photo{margin: auto;}
+.menu-item-price{text-align: center;}
+.menu-item-description{text-align: center;}
+.menu-item-tile hr{width: 80%; margin: auto;}
+
+}
+/*Extra Small*/
+
+@media (max-width:575px) {
+.panel-footer section {text-align: center;}
+}
+
+
